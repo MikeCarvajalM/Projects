@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOCHO DRIVE · Paseos en Bocho por los Volcanes y Lagunas de Quito</title>
+
+  <!-- Tipografías requeridas (conservadas según especificación) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,75..125,400..700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,400&amp;display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HERO PRINCIPAL (Conservado con enmarcado 12px margen y 22px radio)
+       ========================================================================== -->
+  <header class="hero-frame" id="hero" role="banner">
+
+    <!-- Navegación mínima superior -->
+    <nav class="section-nav" aria-label="Navegación principal">
+      <div class="brand">
+        <span class="brand-title">BOCHO DRIVE</span>
+        <span class="brand-sub">QUITO · ECUADOR</span>
+      </div>
+
+      <div class="nav-aside">
+        <span class="status-indicator">
+          <span class="coral-dot" aria-hidden="true"></span>
+          <span class="status-text">SALIDAS DISPONIBLES</span>
+        </span>
+        <span class="nav-edition secondary-data">ANDES 2.850 M</span>
+      </div>
+    </nav>
+
+    <!-- Contenido principal: situado a la izquierda -->
+    <div class="hero-body">
+      <div class="hero-text-block">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent"></span>
+          <span>EXPEDICIONES EN ESCARABAJO CLÁSICO</span>
+        </div>
+
+        <h1 class="section-title">
+          <span class="title-line">LOS VOLCANES <span class="title-slash">/</span></span><br>
+          <span class="title-line">Y <em>lagunas</em></span>
+        </h1>
+
+        <p class="section-copy hero-description">
+          Descubre los volcanes y lagunas de Quito al volante de un bocho clásico. Recorre vías habilitadas hasta miradores y accesos autorizados del Pichincha, Quilotoa y las lagunas andinas.
+        </p>
+
+        <div class="hero-action">
+          <a href="#consulta" class="hero-btn" id="btn-consulta-hero">
+            <span>Preparar mi paseo</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video de fondo en bucle sin sonido con fade marfil localizado -->
+    <div class="hero-media-container" aria-hidden="true">
+      <div class="hero-media-fade"></div>
+      <video
+        id="hero-video"
+        class="hero-media-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="media/bocho-drive-poster.jpg"
+        preload="auto">
+        <source src="media/bocho-drive-loop-1080p.mp4" type="video/mp4">
+        <source src="media/bocho-drive-loop.mp4" type="video/mp4">
+        <img
+          src="media/bocho-drive-bg.jpg"
+          alt="Bocho clásico en los paisajes volcánicos de Quito, Ecuador"
+          class="hero-media-img"
+        />
+      </video>
+    </div>
+
+    <!-- Borde inferior: ruta, altitud y edición (texto pequeño) -->
+    <footer class="hero-bottom" aria-label="Información de ruta y altitud">
+      <div class="telemetry-col telemetry-route">
+        <span class="telemetry-label">RUTA</span>
+        <span class="telemetry-value">CIRCUITO VOLCANES Y LAGUNAS · QUILOTOA, COTOPAXI Y CUICOCHA</span>
+      </div>
+
+      <div class="telemetry-col telemetry-speed secondary-data">
+        <span class="telemetry-label">ALTITUD</span>
+        <span class="telemetry-value">2.850 — 3.914 M S. N. M. · CORDILLERA REAL</span>
+      </div>
+
+      <div class="telemetry-col telemetry-edition secondary-data">
+        <span class="telemetry-label">EDICIÓN</span>
+        <span class="telemetry-value">TEMPORADA 2026 · BOCHO DRIVE QUITO</span>
+      </div>
+    </footer>
+
+  </header>
+
+  <!-- ==========================================================================
+       SECCIÓN DE EXPERIENCIA (COMBI CLÁSICA Y CUATRO AMIGOS)
+       ========================================================================== -->
+  <section class="experience-frame" id="experiencia" aria-label="Experiencia de viaje en grupo en combi">
+
+    <!-- Encabezado editorial con mucho aire -->
+    <div class="experience-header">
+      <div class="experience-header-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent"></span>
+          <span>02 · LA EXPERIENCIA COLECTIVA</span>
+        </div>
+
+        <h2 class="experience-title">
+          <span class="title-line">LA RUTA <span class="title-slash">/</span></span><br>
+          <span class="title-line">EN <em>compañía</em></span>
+        </h2>
+      </div>
+
+      <div class="experience-header-right">
+        <p class="section-copy experience-description">
+          Paseos para compartir entre amigos en combis clásicas. Diseñamos recorridos por vías abiertas y accesos autorizados, con paradas en lugares seguros y permitidos para disfrutar los paisajes de Quito.
+        </p>
+
+        <div class="experience-cta">
+          <a href="#consulta" class="hero-btn">
+            <span>Preparar mi consulta</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#recorrido" class="exp-link-recorrido">
+            Ver el recorrido
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 3L8 13M3 8.5L8 13.5L13 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Escena central con la combi y los cuatro amigos — todo el ancho, sin padding -->
+    <div class="experience-showcase">
+      <img
+        src="media/combi-experiencia.png"
+        alt="Cuatro amigos posando sobre una combi clásica turquesa en un paisaje andino"
+        class="experience-combi-img"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <!-- Cuadrícula de características de la experiencia con mucho aire -->
+    <div class="experience-grid">
+      <div class="exp-card">
+        <span class="exp-num">01</span>
+        <h3 class="exp-card-title">HASTA 6 AMIGOS</h3>
+        <p class="exp-card-copy">Espacio amplio y cómodo para viajar en grupo en combi clásica o en caravana con bochos.</p>
+      </div>
+
+      <div class="exp-card">
+        <span class="exp-num">02</span>
+        <h3 class="exp-card-title">PARADAS AUTORIZADAS</h3>
+        <p class="exp-card-copy">Sin prisas y con paradas en miradores y espacios habilitados para detenerse con seguridad.</p>
+      </div>
+
+      <div class="exp-card">
+        <span class="exp-num">03</span>
+        <h3 class="exp-card-title">ANFITRIÓN LOCAL</h3>
+        <p class="exp-card-copy">Conductor local que conoce las vías abiertas, los accesos autorizados y la gastronomía de la zona.</p>
+      </div>
+
+      <div class="exp-card">
+        <span class="exp-num">04</span>
+        <h3 class="exp-card-title">EQUIPO DE ALTURA</h3>
+        <p class="exp-card-copy">Café andino de especialidad, mantas térmicas tradicionales y sonido integrado para el viaje.</p>
+      </div>
+    </div>
+
+    <!-- Borde inferior editorial de la experiencia -->
+    <footer class="experience-bottom" aria-label="Especificaciones de la experiencia">
+      <div class="telemetry-col">
+        <span class="telemetry-label">FLOTA DISPONIBLE</span>
+        <span class="telemetry-value">VW COMBI T2 Y ESCARABAJOS CLÁSICOS</span>
+      </div>
+
+      <div class="telemetry-col secondary-data">
+        <span class="telemetry-label">PUNTOS DE SALIDA</span>
+        <span class="telemetry-value">CENTRO HISTÓRICO · CUMBAYÁ · QUITO</span>
+      </div>
+
+      <div class="telemetry-col secondary-data">
+        <span class="telemetry-label">MODALIDAD</span>
+        <span class="telemetry-value">RECORRIDO PRIVADO · TEMPORADA 2026</span>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- ==========================================================================
+       SECCIÓN DE RECORRIDO (CANVAS SCROLL-DRIVEN EN SECUENCIA DE FOTOGRAMAS)
+       ========================================================================== -->
+  <section class="tour-scroll-track" id="recorrido" aria-label="Recorrido panorámico por volcanes y lagunas">
+    <div class="tour-sticky-viewport">
+
+      <!-- Canvas de alta resolución para la secuencia de imágenes -->
+      <canvas id="tour-canvas" class="tour-canvas" width="1280" height="720"></canvas>
+
+      <!-- Gradiente protector para legibilidad de las tarjetas -->
+      <div class="tour-vignette" aria-hidden="true"></div>
+
+      <!-- Barra superior fija del recorrido -->
+      <div class="tour-header" aria-hidden="true">
+        <div class="tour-brand">
+          <span class="tour-brand-name">BOCHO DRIVE</span>
+          <span class="tour-brand-sep">/</span>
+          <span class="tour-brand-label">EXPEDICIÓN ANDINA</span>
+        </div>
+        <div class="tour-status">
+          <span class="coral-dot"></span>
+          <span class="tour-step-badge" id="tour-step-badge">ETAPA 01 / 04</span>
+        </div>
+      </div>
+
+      <!-- Contenedor de historias y textos sobre volcanes y lagunas (con mucho aire) -->
+      <div class="tour-stories-wrap">
+
+        <!-- Historia 01: El Pichincha -->
+        <article class="tour-story is-active" data-index="0" id="story-0">
+          <div class="story-tag">
+            <span class="story-index">01</span>
+            <span class="story-sep">·</span>
+            <span>PUNTO DE PARTIDA</span>
+          </div>
+          <h2 class="story-title">
+            EL PICHINCHA <span class="story-slash">/</span><br>
+            <em>Mirador andino</em>
+          </h2>
+          <p class="story-copy">
+            La travesía comienza en Quito y sigue vías habilitadas hacia miradores autorizados del Pichincha. Aire de altura y paisajes andinos, siempre respetando los cierres y las indicaciones locales.
+          </p>
+          <div class="story-footer">
+            <span class="story-stat">ALTITUD 2.850 M</span>
+            <span class="story-stat">QUITO CENTRAL</span>
+          </div>
+        </article>
+
+        <!-- Historia 02: Cotopaxi -->
+        <article class="tour-story" data-index="1" id="story-1">
+          <div class="story-tag">
+            <span class="story-index">02</span>
+            <span class="story-sep">·</span>
+            <span>AVENIDA DE LOS VOLCANES</span>
+          </div>
+          <h2 class="story-title">
+            EL COTOPAXI <span class="story-slash">/</span><br>
+            <em>Caminos de ceniza</em>
+          </h2>
+          <p class="story-copy">
+            Rumbo al sur por carreteras abiertas al tránsito y accesos permitidos en la zona del Cotopaxi. La visita se ajusta a las normas y condiciones vigentes del parque.
+          </p>
+          <div class="story-footer">
+            <span class="story-stat">ALTITUD 3.800 M</span>
+            <span class="story-stat">ACCESO SEGÚN NORMATIVA</span>
+          </div>
+        </article>
+
+        <!-- Historia 03: Quilotoa -->
+        <article class="tour-story" data-index="2" id="story-2">
+          <div class="story-tag">
+            <span class="story-index">03</span>
+            <span class="story-sep">·</span>
+            <span>CRÁTER Y ESMERALDA</span>
+          </div>
+          <h2 class="story-title">
+            QUILOTOA <span class="story-slash">/</span><br>
+            <em>Laguna sagrada</em>
+          </h2>
+          <p class="story-copy">
+            Visita el Quilotoa por las vías y los accesos habilitados. Disfruta los miradores permitidos de la laguna y confirma las condiciones locales antes de salir.
+          </p>
+          <div class="story-footer">
+            <span class="story-stat">ALTITUD 3.914 M</span>
+            <span class="story-stat">MIRADORES AUTORIZADOS</span>
+          </div>
+        </article>
+
+        <!-- Historia 04: Cuicocha y horizonte -->
+        <article class="tour-story" data-index="3" id="story-3">
+          <div class="story-tag">
+            <span class="story-index">04</span>
+            <span class="story-sep">·</span>
+            <span>CORDILLERA REAL</span>
+          </div>
+          <h2 class="story-title">
+            CUICOCHA <span class="story-slash">/</span><br>
+            <em>Horizonte abierto</em>
+          </h2>
+          <p class="story-copy">
+            Recorre carreteras abiertas hacia los accesos autorizados de Cuicocha. El paseo se limita a miradores y espacios habilitados, de acuerdo con las indicaciones del lugar.
+          </p>
+          <div class="story-footer">
+            <span class="story-stat">PANORÁMICA 360°</span>
+            <span class="story-stat">ANDES ECUATORIANOS</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Borde inferior del recorrido: barra de progreso y guía de scroll -->
+      <div class="tour-bottom-bar">
+        <div class="tour-progress-wrap">
+          <span class="tour-progress-label">PROGRESO DEL RECORRIDO</span>
+          <div class="tour-progress-rail">
+            <div class="tour-progress-fill" id="tour-progress-fill"></div>
+          </div>
+        </div>
+        <div class="tour-scroll-hint">
+          <span>DESLIZA PARA RECORRER</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 2.5v11M3.5 9l4.5 4.5 4.5-4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SELECTOR DE EXPERIENCIA (PAISAJE INTERACTIVO)
+       ========================================================================== -->
+  <section class="route-picker-frame" id="elegir-ruta" aria-labelledby="route-picker-title">
+    <header class="route-picker-header">
+      <div>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent"></span>
+          <span>03 · DISEÑA TU DÍA</span>
+        </div>
+        <h2 class="experience-title route-picker-title" id="route-picker-title">
+          ELIGE TU <span class="title-slash">/</span><br>
+          <em>horizonte</em>
+        </h2>
+      </div>
+      <p class="section-copy route-picker-intro">
+        Cada paisaje tiene su propio ritmo. Elige tu favorito para consultarnos por un recorrido en vías y accesos autorizados.
+      </p>
+    </header>
+
+    <form class="route-picker-form" id="route-picker-form">
+      <fieldset class="route-picker-options">
+        <legend class="sr-only">Elige el paisaje de tu experiencia</legend>
+        <label class="route-option">
+          <input type="radio" name="experiencia" value="volcanes" checked>
+          <span class="route-option-index">01</span>
+          <span class="route-option-name">VOLCANES</span>
+          <span class="route-option-arrow" aria-hidden="true">↗</span>
+        </label>
+        <label class="route-option">
+          <input type="radio" name="experiencia" value="lagunas">
+          <span class="route-option-index">02</span>
+          <span class="route-option-name">LAGUNAS</span>
+          <span class="route-option-arrow" aria-hidden="true">↗</span>
+        </label>
+        <label class="route-option">
+          <input type="radio" name="experiencia" value="atardecer">
+          <span class="route-option-index">03</span>
+          <span class="route-option-name">ATARDECER</span>
+          <span class="route-option-arrow" aria-hidden="true">↗</span>
+        </label>
+      </fieldset>
+
+      <div class="route-picker-layout">
+        <div class="route-scene-container" id="route-scene-container">
+          <canvas id="route-scene-canvas" aria-hidden="true"></canvas>
+          <p class="route-scene-status" id="route-scene-status" role="status" aria-live="polite">
+            Preparando el paisaje interactivo…
+          </p>
+          <span class="route-scene-hint">MUEVE PARA EXPLORAR</span>
+        </div>
+
+        <div class="route-picker-detail" aria-live="polite" aria-atomic="true">
+          <span class="route-detail-index" id="route-detail-index">RUTA 01</span>
+          <h3 class="route-detail-title" id="route-detail-title">Volcanes</h3>
+          <p class="route-detail-copy" id="route-detail-copy">
+            Sigue vías abiertas al tránsito hasta los miradores habilitados del Cotopaxi y el Pichincha. Una ruta de altura, siempre de acuerdo con las indicaciones locales.
+          </p>
+          <div class="route-selection">
+            <span class="telemetry-label">SELECCIÓN PARA TU CONSULTA</span>
+            <strong id="route-selection-value">VOLCANES</strong>
+          </div>
+          <input type="hidden" name="experiencia-seleccionada" id="selected-experience" value="volcanes">
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- ==========================================================================
+       CONSULTA Y PREPARACIÓN DEL PASEO
+       ========================================================================== -->
+  <section class="closing-frame" id="consulta" aria-labelledby="consult-title">
+    <header class="closing-header">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-accent"></span>
+        <span>04 · TU PRÓXIMA SALIDA</span>
+      </div>
+      <h2 class="experience-title closing-title" id="consult-title">
+        HABLEMOS DEL <span class="title-slash">/</span><br>
+        <em>recorrido</em>
+      </h2>
+      <p class="section-copy closing-intro">
+        Cuéntanos cuándo quieres salir y cuántas personas te acompañan. Copia el mensaje y envíalo por el canal que prefieras para confirmar disponibilidad y detalles.
+      </p>
+    </header>
+
+    <div class="closing-content">
+      <form class="consult-form" id="consult-form">
+        <div class="consult-fields">
+          <label class="consult-field" for="consult-date">
+            <span>FECHA TENTATIVA</span>
+            <input id="consult-date" name="fecha" type="date" required>
+          </label>
+          <label class="consult-field" for="consult-people">
+            <span>NÚMERO DE PERSONAS</span>
+            <input id="consult-people" name="personas" type="number" min="1" max="6" value="2" required>
+            <small>Hasta 6 personas por grupo.</small>
+          </label>
+        </div>
+
+        <div class="consult-selected-route">
+          <span class="telemetry-label">EXPERIENCIA ELEGIDA</span>
+          <strong id="consult-route-label">VOLCANES</strong>
+          <input type="hidden" name="experiencia" id="consult-route-value" value="volcanes">
+          <a class="consult-change-route" href="#elegir-ruta">Cambiar experiencia</a>
+        </div>
+
+        <label class="consult-field consult-message-field" for="consult-message">
+          <span>MENSAJE PARA COPIAR</span>
+          <textarea id="consult-message" rows="5" readonly placeholder="Elige una fecha para preparar tu mensaje."></textarea>
+        </label>
+
+        <button class="hero-btn consult-copy-btn" id="copy-consult-message" type="submit" disabled>
+          <span>Copiar mensaje</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5.5 5.5V3.75A1.25 1.25 0 0 1 6.75 2.5h5.5A1.25 1.25 0 0 1 13.5 3.75v5.5a1.25 1.25 0 0 1-1.25 1.25H10.5M3.75 5.5h5.5A1.25 1.25 0 0 1 10.5 6.75v5.5a1.25 1.25 0 0 1-1.25 1.25h-5.5a1.25 1.25 0 0 1-1.25-1.25v-5.5A1.25 1.25 0 0 1 3.75 5.5Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <p class="consult-status" id="consult-status" role="status" aria-live="polite">
+          Completa la fecha; luego podrás copiar tu consulta.
+        </p>
+      </form>
+
+      <section class="preparation-faq" aria-labelledby="faq-title">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-accent"></span>
+          <span>ANTES DE SALIR</span>
+        </div>
+        <h3 class="faq-title" id="faq-title">Preguntas frecuentes</h3>
+
+        <details class="faq-item">
+          <summary>¿Qué debo llevar?</summary>
+          <p>Ropa abrigada en capas, calzado cómodo, protección solar, agua y cualquier medicamento personal. El clima de altura puede cambiar durante el día.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo se define la ruta?</summary>
+          <p>Coordinamos el recorrido según la fecha, el clima y las condiciones de acceso. Solo circulamos por vías abiertas y entramos a espacios con autorización vigente.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Podemos detenernos para tomar fotos?</summary>
+          <p>Sí, en miradores y lugares donde esté permitido estacionar y detenerse con seguridad. No ingresamos a caminos cerrados, propiedades privadas ni zonas restringidas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué pasa si cambia el clima o se cierra un acceso?</summary>
+          <p>La seguridad y las normas locales tienen prioridad. Podemos ajustar el recorrido a otra vía o mirador autorizado, o coordinar una nueva fecha contigo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿El paseo incluye caminatas?</summary>
+          <p>El paseo se realiza en vehículo por vías habilitadas. Cualquier caminata es opcional y solo se hace por senderos señalizados y abiertos al público.</p>
+        </details>
+      </section>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
